@@ -13,14 +13,6 @@ page{
   margin-left: 30%;
   text-align: center;
 }
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
-
 .form1{
   line-height:100%;
   text-align: center;
@@ -28,16 +20,18 @@ page{
 .user_name{
   display: flex;
   line-height:200%;
+  justify-content: center;
 }
 .user_name input{  
   text-align:center;
   height: 3rem;
   background-color: #FFFFFF;
   width:80%;
-  margin: 0 0 2rem 10%;
+  margin: 0 0 2rem 0;
 }
 .user_email {
-  display: flex;
+  display: flex;  
+  justify-content: center;
 }
 .user_email .emali_boder{
   width: 50%;
@@ -47,12 +41,10 @@ page{
   height: 3rem;
   background-color: #FFFFFF;
   width:100%;
-  margin: 0 0 2rem 10%;
-  margin-left:2rem
+  margin: 0 0 2rem 0;
 }
 .verifyBtn{  
   width:30%;
-  margin-left: 10%;
 }
 .verifyBtn button{
   text-align: center;
