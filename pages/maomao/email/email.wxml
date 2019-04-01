@@ -1,0 +1,10 @@
+<view class='content'>
+
+  <form bindsubmit="formSubmit">
+    <view class='input'>
+     <input type='text'name="email" placeholder='请输入邮箱except@163.com'></input>
+     <input type='text'name="content" hidden='ture' value='{{content}}'></input>
+    </view>
+    <button form-type="submit">Submit</button>
+  </form>
+</view>

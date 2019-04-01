@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class="content">
+  <view class='bottom_bg'>
+    <view class='title'>    
+        纪
+    </view> <view class='title'>
+        念
+    </view> <view class='title'>
+        册
+    </view>
+    <view class='bottom'>
+      <view bindtap="bindtap1" class='menu1'></view>    
+      <view bindtap="bindtap2" class='menu2'></view>    
+      <view bindtap="bindtap3" class='menu3'></view>
+    </view>
+  </view>
+</view>
+ 
+
+
+
+
+
+
+
+
+
+

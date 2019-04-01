@@ -1,0 +1,8 @@
+/* pages/maomao/suiyiji/suiyiji.wxss */
+page{
+  height: 100%;
+}
+.content{  
+  height: 100%;
+  background-color: #233333;
+}

@@ -1,0 +1,11 @@
+<view class="content">
+  
+  <form  bindsubmit="bind_send">
+    <view class='send'>
+      <button form-type="submit">send</button>
+    </view>
+    <view class="ad_popError" wx:if="{{popErrorMsg}}">{{popErrorMsg}}</view>
+    <textarea maxlength='-1' class='texttar'name="content" value='{{centent}}'></textarea >
+  </form>
+  
+</view>

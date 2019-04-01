@@ -1,0 +1,86 @@
+/* pages/maomao/maomao.wxss */
+page{
+  height: 100%;
+}
+.content{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  min-height:100%;
+  background-image: url(http://www.qjlei.cn/index_bg.png);
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+}
+.title{
+  font-size: 60px;
+  font-family: STXingkai;
+  padding-top: 60px;
+  color:#000;
+}
+.bottom_bg{
+  min-height: 100%;
+}
+.bottom{   
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  text-align: center;  
+  bottom: 42px;
+  left: 10px;
+}
+.menu1{
+  background-image: url(http://www.qjlei.cn/images/suiyi.png);
+  width:80px;
+  height:80px;
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+  margin: 15px;
+}
+.menu1:hover{
+  background-image: url(http://www.qjlei.cn/images/suiyi.png);
+  width:80px;
+  height:80px;
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+  margin: 15px;
+  box-shadow:0 6rpx 10rpx 2rpx #ffb12acb;/*for Android*/
+  -webkit-box-shadow:0px 5px 5px 0px hsla(38, 100%, 58%, 0.87);/*for IOS*/
+}
+.menu2{
+  background-image: url(http://www.qjlei.cn/images/weilai.png);
+  width:80px;
+  height:80px;
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+  margin: 15px;
+}
+.menu2:hover{
+  background-image: url(http://www.qjlei.cn/images/weilai.png);
+  width:80px;
+  height:80px;
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+  margin: 15px;
+  box-shadow:0 6rpx 10rpx 2rpx #ffb12acb;/*for Android*/
+  -webkit-box-shadow:0px 5px 5px 0px hsla(38, 100%, 58%, 0.87);/*for IOS*/
+}
+.menu3{
+  background-image: url(http://www.qjlei.cn/images/guowang.png);
+  width:80px;
+  height:80px;
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+  margin: 15px;
+}
+
+.menu3:hover{   
+  background-image: url(http://www.qjlei.cn/images/guowang.png);
+  width:80px;
+  height:80px;
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+  margin: 15px;
+  box-shadow:0 6rpx 10rpx 2rpx #ffb12acb;/*for Android*/
+  -webkit-box-shadow:0px 5px 5px 0px hsla(38, 100%, 58%, 0.87);/*for IOS*/
+}
