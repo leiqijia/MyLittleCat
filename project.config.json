@@ -4,16 +4,17 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
-		"newFeature": true
+		"newFeature": true,
+		"autoAudits": false
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.0.4",
 	"appid": "wxa8061ac4f1bb3ac0",
-	"projectname": "LQ",
+	"projectname": "MyLittleCat",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
