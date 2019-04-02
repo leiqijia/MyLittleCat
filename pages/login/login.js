@@ -73,22 +73,6 @@ Page({
         })
       }
     })
-    wx.login({
-      success(res) {
-        console.log(res);
-        if (res.code) {
-          // 发起网络请求
-          wx.request({
-            url: 'https://api.weixin.qq.com/sns/jscode2session?appid=wxa8061ac4f1bb3ac0&secret=f3ccd7ab10906065c5c0496612bd028a&js_code=res.code&grant_type=authorization_code',
-            data: {
-              code: res.code
-            }
-          })
-        } else {
-          console.log('登录失败！' + res.errMsg)
-        }
-      }
-    })
 
   },
 

@@ -13,17 +13,18 @@ Page({
     }
     console.log('form发生了submit事件，携带数据为：', e.detail.value)
     wx.request({
-      url: 'https://www.qjlei.cn/PersonalMessage/sendEmail', //仅为示例，并非真实的接口地址
+      url: 'https://www.qjlei.cn/PersonalMessage/email/sendEmail', 
       data: {
         content:content,
-        email: email
+        email: email,
+        sendType:'sendNow'
       },
       header: {
         'content-type': 'application/json'
       },
       success: function (res) {
         console.log(res.data)
-        if (res.data ==='发送邮件:true'){
+        if (res.data.retCode ===0){
           wx.showModal({
             title: '提示',
             content: '发送成功',

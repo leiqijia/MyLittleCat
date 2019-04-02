@@ -45,7 +45,7 @@ Page({
       return false;
     }
     wx.request({
-      url: 'https://www.qjlei.cn/PersonalMessage/register', //仅为示例，并非真实的接口地址
+      url: 'https://www.qjlei.cn/PersonalMessage/user/register', 
       data: {
         content: imageverify,
         email: user_name,
@@ -87,7 +87,7 @@ Page({
       return false;
     }
     wx.request({
-      url: 'https://www.qjlei.cn/PersonalMessage/sendEmail', //仅为示例，并非真实的接口地址
+      url: 'https://www.qjlei.cn/PersonalMessage/email/sendEmail', 
       data: {
         content: imageverify,
         email: username
@@ -117,6 +117,26 @@ Page({
    */
   onLoad: function (options) {
 
+    wx.login({
+      success(res) {
+        console.log(res);
+        if (res.code) {
+          // 发起网络请求
+          wx.request({
+            url: 'https://www.qjlei.cn/PersonalMessage/wx/getOpenId',
+            data: {
+              code: res.code
+            },
+            success: function (res) {
+              console.log(res.data)
+             
+            }
+          })
+        } else {
+          console.log('登录失败！' + res.errMsg)
+        }
+      }
+    })
   },
 
   /**
