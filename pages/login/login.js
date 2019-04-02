@@ -73,9 +73,7 @@ Page({
         })
       }
     })
-<<<<<<< HEAD
-=======
-   
+
     // wx.login({
     //   success(res) {
     //     console.log(res);
@@ -93,7 +91,6 @@ Page({
     //   }
     // })
 
->>>>>>> 12
   },
 
   /**
