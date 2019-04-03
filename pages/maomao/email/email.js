@@ -28,11 +28,23 @@ Page({
           wx.showModal({
             title: '提示',
             content: '发送成功',
-           
+            cancelText:'再写一封',
+            confirmText:'返回主页',
+            success(res){
+              if (res.confirm) {
+                wx.navigateTo({
+                  url: '/pages/maomao/maomao',　　// 注册页面
+                })
+                console.log('用户点击确定')
+              } else if (res.cancel) {
+                wx.navigateTo({
+                  url: '/pages/maomao/jiwangweilai/weilai',　　// 注册页面
+                })
+                console.log('用户点击取消')
+              }
+            }
           })
-          wx.navigateTo({
-            url: '/pages/login/register/register',　　// 注册页面
-          })
+        
         }else{
           wx.showModal({
             title: '提示',
