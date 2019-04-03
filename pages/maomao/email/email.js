@@ -28,6 +28,10 @@ Page({
           wx.showModal({
             title: '提示',
             content: '发送成功',
+           
+          })
+          wx.navigateTo({
+            url: '/pages/login/register/register',　　// 注册页面
           })
         }else{
           wx.showModal({
