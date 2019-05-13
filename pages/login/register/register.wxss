@@ -4,8 +4,9 @@ page{
 }
 .body{
   height: 100%;
-  background-image: url(http://www.qjlei.cn/images/regiter_bg.jpg);
+  background-image: url(http://www.qjlei.cn/images/login_bg3.png);
   line-height:100%;
+  background-size: 100% 100%; 
 }
 .top{
   height: 20%;

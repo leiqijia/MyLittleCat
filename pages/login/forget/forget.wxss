@@ -1,1 +1,10 @@
 /* pages/login/forget/forget.wxss */
+page{
+  height: 100%;
+}
+.body{
+  height: 100%;
+  background-image: url(http://www.qjlei.cn/images/login_bg.png);
+  line-height:100%;
+  background-size: 100% 100%; 
+}

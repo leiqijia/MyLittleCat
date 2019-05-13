@@ -4,7 +4,9 @@ page{
 }
 .content{
   height: 100%;
-  background-color: #999999; 
+  background-color: #999999;
+  background-image: url(https://www.qjlei.cn/images/weilai/jiwangweilai_bg2.jpg);
+  background-size: 100% 100%; 
 }
 .input{
   padding-top: 5rem;
