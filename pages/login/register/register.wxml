@@ -6,11 +6,14 @@
       <view class='user_name'>
        <input type='text' name="userName" focus='true' placeholder='请输入您的邮箱地址……' bindinput='username' value="{{userName}}"></input>
       </view >
-      <view class='user_email'>
-       <view class='emali_boder'><input type='text' name="image_verify"  bindinput='imageverify' value="{{imageVerify}}" placeholder='请输入图形验证码'></input>  </view> 
-       <view class='verifyBtn'>
-        <image src='http://n8.cmsfile.pg0.cn/group4/M00/03/BA/CgoOFlnoGnyAOQ54AABZQUxMv3E579.jpg?enable=&qt=75'></image>
-       </view>     
+      <view class='user_name'>
+     
+      <movable-area class="content" style="width:{{area_width}}%">
+          <movable-view class='box' style='width:{{box_width}}rpx' friction="{{100}}" direction="horizontal" x="{{x}}" damping="{{500}}" bindchange="drag" bindtouchend="dragOver">
+          </movable-view>
+         </movable-area>  
+
+         
       </view>
       <view class='user_email'>
         <view class='emali_boder'><input type='text' name="emali_verify" placeholder='请输入邮箱验证码' ></input></view>

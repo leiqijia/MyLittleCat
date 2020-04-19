@@ -23,7 +23,7 @@ Page({
         title: '提示',
         content: '用户名或密码不能为空',
         confirmColor: '#118EDE',
-        showCancel: false,
+        showCancel: true,
         success: function (res) {
           if (res.confirm) {
             //console.log('用户点击确定')  
